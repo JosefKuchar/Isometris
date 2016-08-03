@@ -1,0 +1,21 @@
+{
+  "name": "isometris",
+  "description": "",
+  "main": "game.js",
+  "authors": [
+    "Josef Kuchař"
+  ],
+  "license": "GNU GPLv3",
+  "homepage": "isometris.josefkuchar.cz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "phaser": "^2.6.1"
+  }
+}

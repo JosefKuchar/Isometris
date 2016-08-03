@@ -1,0 +1,83 @@
+{ "frames": {
+   "Favicon export": {
+    "frame": { "x": 0, "y": 0, "w": 664, "h": 664 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 664, "h": 664 },
+    "sourceSize": { "w": 664, "h": 664 },
+    "duration": 100
+   },
+   "Favicon": {
+    "frame": { "x": 0, "y": 664, "w": 83, "h": 83 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 83, "h": 83 },
+    "sourceSize": { "w": 83, "h": 83 },
+    "duration": 100
+   },
+   "I-block": {
+    "frame": { "x": 0, "y": 747, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "J-Block": {
+    "frame": { "x": 0, "y": 789, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "L-Block": {
+    "frame": { "x": 0, "y": 831, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "O-Block": {
+    "frame": { "x": 0, "y": 873, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "S-Block": {
+    "frame": { "x": 0, "y": 915, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "T-Block": {
+    "frame": { "x": 0, "y": 957, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "Z-Block": {
+    "frame": { "x": 0, "y": 999, "w": 42, "h": 42 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
+    "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.6-dev",
+  "image": "sheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 664, "h": 1041 },
+  "scale": "1"
+ }
+}
