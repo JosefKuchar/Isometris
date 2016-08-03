@@ -18,7 +18,7 @@ preload.prototype = {
     game.load.atlas('test', 'assets/img/sheet.png', 'assets/img/sheet.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
   },
   update: function() {
-    if(this.time.now - this.startingTime >= 5000 || !this.SPLASHSCREEN_LONG) {
+    if (this.time.now - this.startingTime >= 5000 || !this.SPLASHSCREEN_LONG) {
       //TODO: Start game
     }
   }
