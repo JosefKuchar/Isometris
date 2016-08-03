@@ -3,10 +3,10 @@ var preload = function(game) {}
 preload.prototype = {
   preload: function() {
     //Only set this to false, if you are developer
-    this.SPLASHSCREEN_LONG = false;
+    this.SPLASHSCREEN_LONG = true;
 
     //Show Geekwork 2016 splashScreen
-    var splashScreen = this.add.sprite(this.game.world.centerX,0,"geekwork-splash");
+    var splashScreen = this.add.sprite(this.game.world.centerX, 0, "geekwork-splash");
     splashScreen.anchor.x = 0.5;
     splashScreen.anchor.y = 0;
 
@@ -19,7 +19,7 @@ preload.prototype = {
   },
   update: function() {
     if(this.time.now - this.startingTime >= 5000 || !this.SPLASHSCREEN_LONG) {
-      console.log("Can be");
+      //TODO: Start game
     }
   }
 }
