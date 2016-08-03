@@ -107,7 +107,7 @@ gulp.task("bower", function() {
 });
 
 gulp.task("js", function() {
-  return gulp.src(bases.app + "js/*")
+  return gulp.src(bases.app + "js/**/*.*")
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     //.pipe(uglify())
