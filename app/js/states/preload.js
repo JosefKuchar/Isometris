@@ -1,4 +1,4 @@
-var preload = function(game) {}
+var preload = function(game) {};
 
 preload.prototype = {
   preload: function() {
@@ -18,8 +18,9 @@ preload.prototype = {
     game.load.atlas('test', 'assets/img/sheet.png', 'assets/img/sheet.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
   },
   update: function() {
-    if (this.time.now - this.startingTime >= 5000 || !this.SPLASHSCREEN_LONG) {
-      //TODO: Start game
+    if (this.time.now - this.startingTime >= 4000 || !this.SPLASHSCREEN_LONG) {
+      //Start game
+      this.game.state.start("Play");
     }
   }
-}
+};

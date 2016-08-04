@@ -153,7 +153,7 @@ gulp.task("favicon", function() {
 gulp.task("watch", ['browserSync'], function() {
   gulp.watch(bases.app + "css/*", ["css"]);
   gulp.watch(bases.app + "html/*.html", ["html"]);
-  gulp.watch(bases.app + "js/*", ["js"]);
+  gulp.watch(bases.app + "js/**/*.*", ["js"]);
   gulp.watch(bases.app + "assets/img/*", ["img"]);
   gulp.watch(bases.app + "assets/img/*.ase", ["aseprite"]);
   gulp.watch(bases.app + "assets/font/*", ["font"]);

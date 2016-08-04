@@ -4,6 +4,7 @@ var game = new Phaser.Game(1280, 720, Phaser.AUTO, "");
 //Add game states to the game
 game.state.add("Boot", boot);
 game.state.add("Preload", preload);
+game.state.add("Play", play);
 
 //Start game
 game.state.start("Boot");

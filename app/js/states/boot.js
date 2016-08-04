@@ -1,4 +1,4 @@
-var boot = function(game) {}
+var boot = function(game) {};
 
 boot.prototype = {
   init: function() {
@@ -18,4 +18,4 @@ boot.prototype = {
   create: function() {
     this.game.state.start("Preload");
   }
-}
+};
