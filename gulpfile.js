@@ -11,6 +11,7 @@ var concat = require("gulp-concat");
 var jsonminify = require("gulp-jsonminify");
 var shell = require("gulp-shell");
 var stripJsonComments = require('gulp-strip-json-comments');
+var babel = require("gulp-babel");
 
 var date = new Date();
 
@@ -25,7 +26,7 @@ var config = {
 //Base paths
 var bases = {
   app: "app/",
-  dist: "dist/",
+  dist: "dist2/",
 };
 
 //Run simple webserver for application
@@ -108,7 +109,10 @@ gulp.task("bower", function() {
 
 gulp.task("js", function() {
   return gulp.src(bases.app + "js/**/*.*")
-    .pipe(jshint())
+    .pipe(jshint({
+      esnext: true
+    }))
+    .pipe(babel())
     .pipe(jshint.reporter('default'))
     //.pipe(uglify())
 
