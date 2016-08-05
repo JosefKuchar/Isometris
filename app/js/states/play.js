@@ -6,6 +6,8 @@ play.prototype = {
 
     var world = new World();
     console.log(world);
+    var brickgen = new BrickGenerator();
+    console.log(brickgen.createBrick());
 
     var blockWidth = 42;
     var blockHeight = 42;

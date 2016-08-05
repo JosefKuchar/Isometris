@@ -5,6 +5,7 @@
   "main": "game.js",
   "devDependencies": {
     "babel-cli": "^6.11.4",
+    "babel-plugin-proxy": "^1.1.0",
     "babel-preset-es2015": "^6.9.0",
     "browser-sync": "^2.12.10",
     "del": "^2.2.0",
