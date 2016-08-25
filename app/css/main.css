@@ -1,3 +1,15 @@
+@font-face {
+    font-family: '04b03';
+    src: url('../assets/font/04b03-webfont.woff2') format('woff2'), url('../assets/font/04b03-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.font04b03 {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    font-family: "04b03";
+}
 * {
     margin: 0;
     padding: 0;

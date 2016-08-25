@@ -13,7 +13,7 @@ class Brick {
 
   rotate() {
     //Clone array, because javascript references
-    var cloned = JSON.parse(JSON.stringify(this.blocks));;
+    var cloned = JSON.parse(JSON.stringify(this.blocks));
     //Rotate array
     for (var y = 0; y < this.width; y++) {
       for (var x = 0; x < this.height; x++) {

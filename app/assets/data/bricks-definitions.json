@@ -1,0 +1,22 @@
+[{
+    "type": 1,
+    "name": "I-Block"
+}, {
+    "type": 2,
+    "name": "J-Block"
+}, {
+    "type": 3,
+    "name": "L-Block"
+}, {
+    "type": 4,
+    "name": "O-Block"
+}, {
+    "type": 5,
+    "name": "S-Block"
+}, {
+    "type": 6,
+    "name": "T-Block"
+}, {
+    "type": 7,
+    "name": "Z-Block"
+}]

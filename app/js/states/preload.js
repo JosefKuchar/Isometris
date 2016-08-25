@@ -17,6 +17,17 @@ preload.prototype = {
 
     //Load bricks from json file
     game.load.json("bricks", "assets/data/bricks.json");
+
+    //Load bricks definitions
+    game.load.json("bricks-defs", "assets/data/bricks-definitions.json");
+
+    //Load music
+    game.load.audio("soundtrack", ["assets/sound/traptheme.mp3"]);
+
+    //FX efects
+    game.load.audio("levelup", ["assets/sound/levelup.wav"]);
+    game.load.audio("line", ["assets/sound/line.wav"]);
+    game.load.audio("brick", ["assets/sound/brick.wav"]);
   },
   update: function() {
     if (this.time.now - this.startingTime >= 4000 || !this.SPLASHSCREEN_LONG) {

@@ -134,6 +134,11 @@ gulp.task("font", function() {
     .pipe(gulp.dest(bases.dist + "assets/font"))
 });
 
+gulp.task("sound", function() {
+  return gulp.src(bases.app + "assets/sound/*")
+    .pipe(gulp.dest(bases.dist + "assets/sound"))
+});
+
 gulp.task("data", function() {
   return gulp.src(bases.app + "assets/data/*")
     .pipe(stripJsonComments())
@@ -163,6 +168,7 @@ gulp.task("watch", ['browserSync'], function() {
   gulp.watch(bases.app + "assets/font/*", ["font"]);
   gulp.watch(bases.app + "assets/data/*", ["data"]);
   gulp.watch(bases.app + "assets/favicon/*", ["favicon"]);
+  gulp.watch(bases.app + "assets/sound/*", ["sound"]);
 });
 
-gulp.task("default", ["html", "css", "js", "font", "data", "aseprite", "img", "favicon", "bower", "browserSync", "watch"]);
+gulp.task("default", ["html", "css", "js", "font", "data", "sound", "aseprite", "img", "favicon", "bower", "browserSync", "watch"]);
