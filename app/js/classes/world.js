@@ -69,12 +69,15 @@ class World {
   pushBrick(brick) {
     this.joinBrick();
     this.currentBrick = brick;
+    if (this.checkCollision(this.currentBrick.x, this.currentBrick.y)) {
+      this.clearGame();
+      console.log("End of fucking game");
+      this.currentBrick = brick;
+    }
     var rowCount = this.removeRows();
     this.lines += rowCount;
     this.calculateScore(rowCount);
     this.level = Math.floor(this.lines / 10) + 1;
-
-    console.log(rowCount);
   }
 
   calculateScore(rowCount) {
@@ -92,6 +95,18 @@ class World {
         this.score += this.level * 1200 + 1200;
         break;
     }
+  }
+
+  clearGame() {
+    for (var x = 0; x < this.width; x++) {
+      for (var y = 0; y < this.height; y++) {
+        this.array[x][y].type = 0;
+      }
+    }
+
+    this.score = 0;
+    this.level = 1;
+    this.lines = 0;
   }
 
   render() {

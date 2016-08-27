@@ -78,12 +78,6 @@ play.prototype = {
     this.rightKey = game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
     this.spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
-    //Create text
-    var style = {
-      font: "bold 35px 04b03",
-      fill: "#000",
-    };
-
     //Time handlers
     this.lastUpdate = 0;
     this.lastPress = 0;
