@@ -52,7 +52,8 @@ play.prototype = {
     //Define sounds
     this.sound = {
       music: game.add.audio('soundtrack'),
-      join: game.add.audio('brick')
+      join: game.add.audio('brick'),
+      line: game.add.audio("line")
     };
 
     //Play the soundtrack
@@ -116,7 +117,9 @@ play.prototype = {
           this.world.currentBrick.updatePosition();
         } else {
           this.sound.join.play();
-          this.world.pushBrick(this.brickgen.createBrick());
+          if (this.world.pushBrick(this.brickgen.createBrick()) > 0) {
+            this.sound.line.play();
+          }
           this.updateUI();
         }
       }
@@ -158,7 +161,9 @@ play.prototype = {
         this.world.currentBrick.updatePosition();
       } else {
         this.sound.join.play();
-        this.world.pushBrick(this.brickgen.createBrick());
+        if (this.world.pushBrick(this.brickgen.createBrick()) > 0) {
+          this.sound.line.play();
+        }
         this.updateUI();
       }
     }

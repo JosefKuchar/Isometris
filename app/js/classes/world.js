@@ -78,6 +78,7 @@ class World {
     this.lines += rowCount;
     this.calculateScore(rowCount);
     this.level = Math.floor(this.lines / 10) + 1;
+    return rowCount;
   }
 
   calculateScore(rowCount) {
