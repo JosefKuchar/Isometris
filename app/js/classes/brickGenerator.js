@@ -14,15 +14,21 @@ class BrickGenerator {
       //Reset tmp array
       tmp_array = Array(4).fill().map(() => Array(4).fill(false));
     }
+
+    for (var i = 0; i < json.length; i++) {
+      this.edges.push(json[i][4].edge);
+    }
   }
 
   createBrick() {
-    return new Brick(this.patterns[Math.floor(Math.random() * 7)]);
+    var patternNumber = Math.floor(Math.random() * 7);
+    return new Brick(this.patterns[patternNumber], this.edges[patternNumber]);
   }
 
   constructor() {
     this.patterns = [];
-
+    this.edges = [];
     this.loadBricks();
+    console.log(this.edges);
   }
 }

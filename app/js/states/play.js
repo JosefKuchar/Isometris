@@ -70,7 +70,7 @@ play.prototype = {
       score: game.add.text((this.game.world.centerX + (blockWidth * this.world.width) / 2) + 30, this.game.world.centerY / 2, "Score: 0", textStyle),
       lines: game.add.text((this.game.world.centerX + (blockWidth * this.world.width) / 2) + 30, this.game.world.centerY / 2 + 50, "Lines: 0", textStyle),
       level: game.add.text((this.game.world.centerX + (blockWidth * this.world.width) / 2) + 30, this.game.world.centerY / 2 + 100, "Level: 1", textStyle),
-    }
+    };
 
     //Register keyboard keys
     this.upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
@@ -89,7 +89,7 @@ play.prototype = {
       this.text.level.text = "Level: " + this.world.level;
       this.text.lines.text = "Lines: " + this.world.lines;
       this.text.score.text = "Score: " + this.world.score;
-    }
+    };
   },
   update: function() {
     if (this.upKey.isUp && this.downKey.isUp && this.leftKey.isUp && this.rightKey.isUp) {

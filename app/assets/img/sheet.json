@@ -1,6 +1,22 @@
 { "frames": {
+   "About_button": {
+    "frame": { "x": 0, "y": 0, "w": 34, "h": 15 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
+    "sourceSize": { "w": 34, "h": 15 },
+    "duration": 100
+   },
+   "Continue_button": {
+    "frame": { "x": 0, "y": 15, "w": 34, "h": 15 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
+    "sourceSize": { "w": 34, "h": 15 },
+    "duration": 100
+   },
    "Favicon export": {
-    "frame": { "x": 0, "y": 0, "w": 664, "h": 664 },
+    "frame": { "x": 0, "y": 30, "w": 664, "h": 664 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 664, "h": 664 },
@@ -8,7 +24,7 @@
     "duration": 100
    },
    "Favicon": {
-    "frame": { "x": 0, "y": 664, "w": 83, "h": 83 },
+    "frame": { "x": 0, "y": 694, "w": 83, "h": 83 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 83, "h": 83 },
@@ -16,7 +32,7 @@
     "duration": 100
    },
    "Ground": {
-    "frame": { "x": 0, "y": 747, "w": 42, "h": 21 },
+    "frame": { "x": 0, "y": 777, "w": 42, "h": 21 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 21 },
@@ -24,7 +40,7 @@
     "duration": 100
    },
    "I-Block": {
-    "frame": { "x": 0, "y": 768, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 798, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -32,7 +48,7 @@
     "duration": 100
    },
    "J-Block": {
-    "frame": { "x": 0, "y": 810, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 840, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -40,7 +56,7 @@
     "duration": 100
    },
    "L-Block": {
-    "frame": { "x": 0, "y": 852, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 882, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -48,23 +64,55 @@
     "duration": 100
    },
    "O-Block": {
-    "frame": { "x": 0, "y": 894, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 924, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
     "sourceSize": { "w": 42, "h": 42 },
+    "duration": 100
+   },
+   "Play_button": {
+    "frame": { "x": 0, "y": 966, "w": 34, "h": 15 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
+    "sourceSize": { "w": 34, "h": 15 },
     "duration": 100
    },
    "S-Block": {
-    "frame": { "x": 0, "y": 936, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 981, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
     "sourceSize": { "w": 42, "h": 42 },
     "duration": 100
    },
+   "Settings_button": {
+    "frame": { "x": 0, "y": 1023, "w": 34, "h": 15 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
+    "sourceSize": { "w": 34, "h": 15 },
+    "duration": 100
+   },
+   "Start": {
+    "frame": { "x": 0, "y": 1038, "w": 41, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 41 },
+    "sourceSize": { "w": 41, "h": 41 },
+    "duration": 100
+   },
+   "Stop": {
+    "frame": { "x": 0, "y": 1079, "w": 41, "h": 41 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 41 },
+    "sourceSize": { "w": 41, "h": 41 },
+    "duration": 100
+   },
    "T-Block": {
-    "frame": { "x": 0, "y": 978, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 1120, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -72,7 +120,7 @@
     "duration": 100
    },
    "Z-Block": {
-    "frame": { "x": 0, "y": 1020, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 1162, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -85,7 +133,7 @@
   "version": "1.1.6-dev",
   "image": "sheet.png",
   "format": "RGBA8888",
-  "size": { "w": 664, "h": 1062 },
+  "size": { "w": 664, "h": 1204 },
   "scale": "1"
  }
 }
