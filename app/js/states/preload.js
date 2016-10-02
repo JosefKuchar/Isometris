@@ -3,7 +3,7 @@ var preload = function(game) {};
 preload.prototype = {
   preload: function() {
     //Only set this to false, if you are developer
-    this.SPLASHSCREEN_LONG = true;
+    this.SPLASHSCREEN_LONG = false;
 
     //Show Geekwork 2016 splashScreen
     var splashScreen = this.add.sprite(this.game.world.centerX, 0, "geekwork-splash");
@@ -23,6 +23,7 @@ preload.prototype = {
 
     //Load music
     game.load.audio("soundtrack", ["assets/sound/traptheme.mp3"]);
+    game.load.audio("menutrack", ["assets/sound/normaltheme.mp3"]);
 
     //FX efects
     game.load.audio("levelup", ["assets/sound/levelup.wav"]);

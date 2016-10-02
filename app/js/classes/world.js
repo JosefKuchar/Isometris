@@ -1,5 +1,5 @@
 class World {
-  constructor(width = 10, height = 20, speed = 1000) {
+  constructor(width = 10, height = 20, speed = 500) {
     this.height = height;
     this.width = width;
     this.speed = speed;
@@ -42,14 +42,20 @@ class World {
   }
 
   checkCollision(xx, yy) {
-    var collision = false;
+    var collision = 0;
 
     for (var x = 0; x < this.currentBrick.edge; x++) {
       for (var y = 0; y < this.currentBrick.edge; y++) {
-        if ((this.currentBrick.blocks[x][y] > 0) &&
-          ((y + yy >= this.height) || (x + xx < 0) || (x + xx >= this.width) ||
-            (this.array[x + xx][y + yy].type > 0))) {
-          collision = true;
+        //If block of brick is not air
+        if (this.currentBrick.blocks[x][y] > 0) {
+          //If it is colliding with world
+          if ((y + yy >= this.height) || (x + xx < 0) || (x + xx >= this.width)) {
+            collision = 1;
+          }
+          //I it is colliding with other blocks
+          else if (this.array[x + xx][y + yy].type > 0) {
+            collision = 2;
+          }
         }
       }
     }
@@ -69,14 +75,18 @@ class World {
   pushBrick(brick) {
     this.joinBrick();
     this.currentBrick = brick;
-    if (this.checkCollision(this.currentBrick.x, this.currentBrick.y)) {
+    if (this.checkCollision(this.currentBrick.x, this.currentBrick.y) !== 0) {
+      Settings.end = true;
       this.clearGame();
-      console.log("End of fucking game");
       this.currentBrick = brick;
     }
     var rowCount = this.removeRows();
     this.lines += rowCount;
     this.calculateScore(rowCount);
+    if (Math.floor(this.lines / 10) + 1 !== this.level) {
+      this.speed = Math.floor(this.speed * 5 / 6);
+      console.log(this.speed);
+    }
     this.level = Math.floor(this.lines / 10) + 1;
     return rowCount;
   }
@@ -102,7 +112,7 @@ class World {
     var tmpX = this.currentBrick.x;
     var tmpY = this.currentBrick.y;
 
-    while (!this.checkCollision(tmpX, tmpY + 1)) {
+    while (!(this.checkCollision(tmpX, tmpY + 1) !== 0)) {
       tmpY += 1;
     }
 

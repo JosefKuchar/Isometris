@@ -7,8 +7,16 @@
     "sourceSize": { "w": 34, "h": 15 },
     "duration": 100
    },
+   "Author": {
+    "frame": { "x": 0, "y": 15, "w": 39, "h": 39 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 39, "h": 39 },
+    "sourceSize": { "w": 39, "h": 39 },
+    "duration": 100
+   },
    "Continue_button": {
-    "frame": { "x": 0, "y": 15, "w": 34, "h": 15 },
+    "frame": { "x": 0, "y": 54, "w": 34, "h": 15 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
@@ -16,7 +24,7 @@
     "duration": 100
    },
    "Favicon export": {
-    "frame": { "x": 0, "y": 30, "w": 664, "h": 664 },
+    "frame": { "x": 0, "y": 69, "w": 664, "h": 664 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 664, "h": 664 },
@@ -24,15 +32,23 @@
     "duration": 100
    },
    "Favicon": {
-    "frame": { "x": 0, "y": 694, "w": 83, "h": 83 },
+    "frame": { "x": 0, "y": 733, "w": 83, "h": 83 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 83, "h": 83 },
     "sourceSize": { "w": 83, "h": 83 },
     "duration": 100
    },
+   "Fullscreen_button": {
+    "frame": { "x": 0, "y": 816, "w": 12, "h": 8 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 12, "h": 8 },
+    "sourceSize": { "w": 12, "h": 8 },
+    "duration": 100
+   },
    "Ground": {
-    "frame": { "x": 0, "y": 777, "w": 42, "h": 21 },
+    "frame": { "x": 0, "y": 824, "w": 42, "h": 21 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 21 },
@@ -40,7 +56,7 @@
     "duration": 100
    },
    "I-Block": {
-    "frame": { "x": 0, "y": 798, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 845, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -48,7 +64,7 @@
     "duration": 100
    },
    "J-Block": {
-    "frame": { "x": 0, "y": 840, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 887, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -56,15 +72,31 @@
     "duration": 100
    },
    "L-Block": {
-    "frame": { "x": 0, "y": 882, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 929, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
     "sourceSize": { "w": 42, "h": 42 },
     "duration": 100
    },
+   "Music_button0": {
+    "frame": { "x": 0, "y": 971, "w": 25, "h": 7 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 25, "h": 7 },
+    "sourceSize": { "w": 25, "h": 7 },
+    "duration": 100
+   },
+   "Music_button1": {
+    "frame": { "x": 0, "y": 978, "w": 25, "h": 7 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 25, "h": 7 },
+    "sourceSize": { "w": 25, "h": 7 },
+    "duration": 100
+   },
    "O-Block": {
-    "frame": { "x": 0, "y": 924, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 985, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -72,7 +104,7 @@
     "duration": 100
    },
    "Play_button": {
-    "frame": { "x": 0, "y": 966, "w": 34, "h": 15 },
+    "frame": { "x": 0, "y": 1027, "w": 34, "h": 15 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
@@ -80,7 +112,7 @@
     "duration": 100
    },
    "S-Block": {
-    "frame": { "x": 0, "y": 981, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 1042, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -88,31 +120,47 @@
     "duration": 100
    },
    "Settings_button": {
-    "frame": { "x": 0, "y": 1023, "w": 34, "h": 15 },
+    "frame": { "x": 0, "y": 1084, "w": 34, "h": 15 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 34, "h": 15 },
     "sourceSize": { "w": 34, "h": 15 },
     "duration": 100
    },
-   "Start": {
-    "frame": { "x": 0, "y": 1038, "w": 41, "h": 41 },
+   "SFX_button0": {
+    "frame": { "x": 0, "y": 1099, "w": 19, "h": 7 },
     "rotated": false,
     "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 41 },
-    "sourceSize": { "w": 41, "h": 41 },
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 19, "h": 7 },
+    "sourceSize": { "w": 19, "h": 7 },
+    "duration": 100
+   },
+   "SFX_button1": {
+    "frame": { "x": 19, "y": 1099, "w": 19, "h": 7 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 19, "h": 7 },
+    "sourceSize": { "w": 19, "h": 7 },
+    "duration": 100
+   },
+   "Start": {
+    "frame": { "x": 0, "y": 1106, "w": 11, "h": 15 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 11, "h": 15 },
+    "sourceSize": { "w": 11, "h": 15 },
     "duration": 100
    },
    "Stop": {
-    "frame": { "x": 0, "y": 1079, "w": 41, "h": 41 },
+    "frame": { "x": 11, "y": 1106, "w": 11, "h": 15 },
     "rotated": false,
     "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 41 },
-    "sourceSize": { "w": 41, "h": 41 },
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 11, "h": 15 },
+    "sourceSize": { "w": 11, "h": 15 },
     "duration": 100
    },
    "T-Block": {
-    "frame": { "x": 0, "y": 1120, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 1121, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -120,7 +168,7 @@
     "duration": 100
    },
    "Z-Block": {
-    "frame": { "x": 0, "y": 1162, "w": 42, "h": 42 },
+    "frame": { "x": 0, "y": 1163, "w": 42, "h": 42 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 42, "h": 42 },
@@ -133,7 +181,7 @@
   "version": "1.1.6-dev",
   "image": "sheet.png",
   "format": "RGBA8888",
-  "size": { "w": 664, "h": 1204 },
+  "size": { "w": 664, "h": 1205 },
   "scale": "1"
  }
 }
