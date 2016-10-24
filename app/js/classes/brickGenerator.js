@@ -29,6 +29,5 @@ class BrickGenerator {
     this.patterns = [];
     this.edges = [];
     this.loadBricks();
-    console.log(this.edges);
   }
 }

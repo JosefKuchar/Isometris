@@ -22,7 +22,7 @@ about.prototype = {
       fill: "#000"
     };
 
-    var name_text = game.add.text(300, 500, "Game by Josef Kuchar, young game and web developer.\nSFX: bfxr.net\nMusic: youtube.com/watch?v=E8FQBjVlERk, youtube.com/watch?v=NmCCQxVBfyM\nGraphics: All sprites created with aseprite editor: aseprite.org\nFont: 04b03 by Yuji Oshimoto", textStyle);
+    var name_text = game.add.text(300, 500, "Game by Josef Kuchar, josefkuchar.cz\nSFX: bfxr.net\nMusic: youtube.com/watch?v=E8FQBjVlERk, youtube.com/watch?v=NmCCQxVBfyM\nGraphics: All sprites created with aseprite editor: aseprite.org\nFont: 04b03 by Yuji Oshimoto", textStyle);
 
     this.toggleFullscreen = function() {
       if (game.scale.isFullScreen) {

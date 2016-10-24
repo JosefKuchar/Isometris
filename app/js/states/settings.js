@@ -40,7 +40,6 @@ settings.prototype = {
     back.scale.y = -7;
 
     var sfx_state = Settings.audio.sfx ? 1 : 0;
-    console.log(sfx_state);
     var sfx = this.game.add.button(this.game.world.centerX, 50, "sheet", this.SFXButtonClick, this, "SFX_button" + sfx_state, "SFX_button" + sfx_state, "SFX_button" + sfx_state);
     sfx.scale.x = 9;
     sfx.scale.y = 9;

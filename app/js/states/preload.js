@@ -3,7 +3,7 @@ var preload = function(game) {};
 preload.prototype = {
   preload: function() {
     //Only set this to false, if you are developer
-    this.SPLASHSCREEN_LONG = false;
+    this.SPLASHSCREEN_LONG = true;
 
     //Show Geekwork 2016 splashScreen
     var splashScreen = this.add.sprite(this.game.world.centerX, 0, "geekwork-splash");

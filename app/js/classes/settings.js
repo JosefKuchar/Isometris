@@ -1,7 +1,7 @@
 var Settings = {
   audio: {
     sfx: true,
-    music: false
+    music: true
   },
   fullscreen: false,
   running: true,

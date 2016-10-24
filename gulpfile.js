@@ -26,7 +26,7 @@ var config = {
 //Base paths
 var bases = {
   app: "app/",
-  dist: "dist3/",
+  dist: "dist/",
 };
 
 //Run simple webserver for application

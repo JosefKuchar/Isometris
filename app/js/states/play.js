@@ -93,12 +93,32 @@ play.prototype = {
       level: game.add.text((this.game.world.centerX + (blockWidth * this.world.width) / 2) + 30, this.game.world.centerY / 2 + 100, "Level: 1", textStyle),
     };
 
+    var controlsStyle = {
+      font: "bold 25px 04b03",
+      fill: "#000"
+    };
+
+    //Controls text
+    game.add.text(1500, 10, "Controls", {
+      font: "bold 60px 04b03",
+      fill: "#000"
+    });
+    game.add.text(1450, 80, "W or Up arrow - Rotate", controlsStyle);
+    game.add.text(1450, 120, "A or Left arrow - Go to left", controlsStyle);
+    game.add.text(1450, 160, "D or Right arrow - Go to right", controlsStyle);
+    game.add.text(1450, 200, "S or Down arrow - Speed up fall", controlsStyle);
+    game.add.text(1450, 240, "Spacebar - Instant fall", controlsStyle);
+
     //Register keyboard keys
     this.upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP);
     this.downKey = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
     this.leftKey = game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
     this.rightKey = game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
     this.spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    this.wKey = game.input.keyboard.addKey(Phaser.Keyboard.W);
+    this.sKey = game.input.keyboard.addKey(Phaser.Keyboard.S);
+    this.aKey = game.input.keyboard.addKey(Phaser.Keyboard.A);
+    this.dKey = game.input.keyboard.addKey(Phaser.Keyboard.D);
 
     //Time handlers
     this.lastUpdate = 0;
@@ -153,11 +173,11 @@ play.prototype = {
   },
   update: function() {
     if (Settings.running) {
-      if (this.upKey.isUp && this.downKey.isUp && this.leftKey.isUp && this.rightKey.isUp && this.spaceKey.isUp) {
+      if (this.upKey.isUp && this.wKey.isUp && this.downKey.isUp && this.sKey.isUp && this.leftKey.isUp && this.aKey.isUp && this.rightKey.isUp && this.dKey.isUp && this.spaceKey.isUp) {
         this.lastPress = 0;
       }
 
-      if (this.downKey.isUp) {
+      if (this.downKey.isUp || this.sKey.isUp) {
         this.additionalSpeed = 0;
       }
 
@@ -171,6 +191,7 @@ play.prototype = {
               var currentScore = this.world.score;
               var linecount = this.world.pushBrick(this.brickgen.createBrick());
               if (Settings.end) {
+                this.sound.music.stop();
                 this.game.state.start("End", true, false, currentScore);
               }
               if (Settings.audio.sfx) {
@@ -186,9 +207,9 @@ play.prototype = {
         }
 
         //Up arrow
-        if (this.upKey.isDown) {
+        if (this.upKey.isDown || this.wKey.isDown) {
           this.world.currentBrick.rotate();
-
+          var oldX = this.world.currentBrick.x;
           if (this.world.currentBrick.x < 0 && this.world.currentBrick.edge !== 4) {
             if (this.world.checkCollision(this.world.currentBrick.x + Math.floor(this.world.currentBrick.edge / 2), this.world.currentBrick.y) === 0) {
               this.world.currentBrick.x += Math.floor(this.world.currentBrick.edge / 2);
@@ -211,15 +232,15 @@ play.prototype = {
             }
           }
 
-
           if (this.world.checkCollision(this.world.currentBrick.x, this.world.currentBrick.y)) {
             for (var i = 0; i < 3; i++) {
               this.world.currentBrick.rotate();
+              this.world.currentBrick.x = oldX;
             }
           }
         }
 
-        if (this.upKey.isDown || this.spaceKey.isDown) {
+        if (this.upKey.isDown || this.spaceKey.isDown || this.wKey.isDown) {
           this.lastPress = this.time.now;
         }
       }
@@ -228,24 +249,24 @@ play.prototype = {
       if (this.time.now - this.lastPress >= 90) {
 
         //Down arrow
-        if (this.downKey.isDown) {
-          this.additionalSpeed = 350;
+        if (this.downKey.isDown || this.sKey.isDown) {
+          this.additionalSpeed = 400;
         }
 
         //Left arrow
-        if (this.leftKey.isDown) {
+        if (this.leftKey.isDown || this.aKey.isDown) {
           if (!(this.world.checkCollision(this.world.currentBrick.x - 1, this.world.currentBrick.y) !== 0)) {
             this.world.currentBrick.x -= 1;
           }
         }
         //Right arrow
-        else if (this.rightKey.isDown) {
+        else if (this.rightKey.isDown || this.dKey.isDown) {
           if (!(this.world.checkCollision(this.world.currentBrick.x + 1, this.world.currentBrick.y) !== 0)) {
             this.world.currentBrick.x += 1;
           }
         }
 
-        if (this.downKey.isDown || this.leftKey.isDown || this.rightKey.isDown) {
+        if (this.downKey.isDown || this.leftKey.isDown || this.rightKey.isDown || this.sKey.isDown || this.aKey.isDown || this.dKey.isDown) {
           this.lastPress = this.time.now;
         }
       }
@@ -260,6 +281,7 @@ play.prototype = {
           var currentScore = this.world.score;
           var linecount = this.world.pushBrick(this.brickgen.createBrick());
           if (Settings.end) {
+            this.sound.music.stop();
             this.game.state.start("End", true, false, currentScore);
           }
           if (Settings.audio.sfx) {

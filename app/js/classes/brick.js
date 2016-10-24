@@ -5,7 +5,6 @@ class Brick {
     this.x = 5 - Math.floor(edge / 2);
     this.y = 0;
     this.edge = edge;
-    console.log(this.edge);
   }
 
   updatePosition() {

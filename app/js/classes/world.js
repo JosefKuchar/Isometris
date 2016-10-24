@@ -85,7 +85,6 @@ class World {
     this.calculateScore(rowCount);
     if (Math.floor(this.lines / 10) + 1 !== this.level) {
       this.speed = Math.floor(this.speed * 5 / 6);
-      console.log(this.speed);
     }
     this.level = Math.floor(this.lines / 10) + 1;
     return rowCount;
